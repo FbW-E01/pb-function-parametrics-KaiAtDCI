@@ -1,6 +1,10 @@
 // Create a function sum which accepts any amount of numbers and return the sum of their addition
 
-const sum = () => {};
+const sum = (...numbers) => {
+    let result = 0;
+    numbers.forEach(value => result += value);
+    return result;
+};
 
 console.log(sum(1)); // -> 1
 console.log(sum(1, 15)); // -> 16

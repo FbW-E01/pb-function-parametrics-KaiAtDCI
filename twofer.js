@@ -1,6 +1,7 @@
 // Complete the function below so that it returns "Two for me and one for you" when no arguments are passed
 
 const twofer = who => {
+  if (typeof who === 'undefined') return 'Two for me and one for you';
   return `Two for me and one for ${who}`;
 };
 
